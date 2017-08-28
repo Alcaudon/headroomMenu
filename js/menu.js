@@ -9,29 +9,35 @@ $(function(){
 
     var ancho = $(window).width(),
         enlaces = $('#enlaces'),
+        search = $('input'),
         btnMenu = $('#btn-menu'),
         icono = $('#btn-menu .icono');
 
-        if (ancho<700){
+        if (ancho<848){
             enlaces.hide();
+            search.hide();
             icono.addClass('fa-bars');
         }
         
-        btnMenu.on('click', function (e) {
+        btnMenu.on('click', function() {
            enlaces.slideToggle();
            icono.toggleClass('fa-bars');
-            icono.toggleClass('fa-times');
+           icono.toggleClass('fa-times');
         });
 
         $(window).on('resize', function () {
-            if($(this).width() > 700){
+            if($(this).width() > 848){
                 enlaces.show();
                 icono.addClass('fa-times');
                 icono.removeClass('fa-bars');
+                search.addClass('search');
+                search.removeClass('no-search');
             }else{
                 enlaces.hide();
                 icono.addClass('fa-bars');
                 icono.removeClass('fa-times');
+                search.addClass('no-search');
+                search.removeClass('search');
             }
         })
 })
