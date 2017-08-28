@@ -53,6 +53,58 @@ header{
     text-align: right;
 }
 
+#menu_gral {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+}
+#menu_gral li{
+    list-style:none;
+}
+
+#menu_gral li a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+#menu_gral li a:hover,
+#menu_gral li a:focus {
+    background: #fff;
+    color: #4357ad;
+}
+
+#menu_gral li ul {
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+}
+
+#menu_gral li li {
+    display: block;
+    width: 100%;
+}
+#menu_gral li:hover li a,
+#menu_gral li:focus li a {
+    display: block;
+    font-size: .9rem;
+    line-height: 1.7rem;
+    border-top: 1px solid #fff;
+    background: #4357ad;
+}
+#menu_gral li li a:hover,
+#menu_gral li li a:focus {
+    background: #fff;
+}
+
+#menu_gral li:hover ul,
+#menu_gral li:focus ul {
+    width: 100%;
+    background:  #fff;
+}
+
 .menu .enlaces a {
     color: #fff;
     text-decoration: none;
@@ -107,6 +159,7 @@ main article p{
     margin-bottom: 1em;
 }
 
+
 /* Efetos del menu */
 .headroom {
     transition: transform .3s ease;
@@ -145,7 +198,6 @@ main article p{
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
 }
 
 

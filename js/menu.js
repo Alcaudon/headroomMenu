@@ -10,6 +10,7 @@ $(function(){
     var ancho = $(window).width(),
         enlaces = $('#enlaces'),
         search = $('input'),
+        select = $('ul'),
         btnMenu = $('#btn-menu'),
         icono = $('#btn-menu .icono');
 
@@ -17,6 +18,7 @@ $(function(){
             enlaces.hide();
             search.hide();
             icono.addClass('fa-bars');
+            select.hide();
         }
         
         btnMenu.on('click', function() {
