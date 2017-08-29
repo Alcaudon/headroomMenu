@@ -82,6 +82,28 @@ header{
     color: #4357ad;
 }
 
+.categorias{
+    width:90%;
+    max-width: 1200px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style:none;
+}
+
+.categorias a {
+
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding:1em;
+    text-align: center;
+    font-size:1em;
+}
+
+
 main {
     width: 90%;
     max-width: 1200px;
